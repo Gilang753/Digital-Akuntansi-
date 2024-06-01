@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 // Import Controllers
+
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\AbsensiController;
@@ -21,6 +22,7 @@ Route::get('/dashboard', function () {
 });
 
 // Resource Routes
+
 Route::resource('pengguna', PenggunaController::class);
 Route::resource('pegawai', PegawaiController::class);
 Route::resource('absensi', AbsensiController::class);
@@ -31,7 +33,7 @@ Route::resource('gaji', GajiController::class);
 Route::resource('pengembangandiri', PengembanganDiriController::class);
 Route::resource('pendidikan', PendidikanController::class);
 
-// Optional: If you need named routes for index actions specifically
+
 Route::get('/pengguna', [PenggunaController::class, 'index'])->name('pengguna.index');
 Route::get('/pegawai', [PegawaiController::class, 'index'])->name('pegawai.index');
 Route::get('/absensi', [AbsensiController::class, 'index'])->name('absensi.index');

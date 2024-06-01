@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('id_tunjangan');
             $table->string('nama_tunjangan');
             $table->decimal('besaran_tunjangan', 10, 2)->default(0.00);
-            $table->timestamps();
+            $table->timestamps(false);
         });
     }
 

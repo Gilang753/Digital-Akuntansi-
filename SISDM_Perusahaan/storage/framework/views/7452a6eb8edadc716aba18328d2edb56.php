@@ -14,7 +14,6 @@
                 <th>Gaji Pokok</th>
                 <th>Gaji Lembur</th>
                 <th>Gaji Total</th>
-                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>

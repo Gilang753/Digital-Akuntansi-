@@ -13,7 +13,6 @@
                 <th>Jam Masuk</th>
                 <th>Jam Pulang</th>
                 <th>Keterangan</th>
-                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>

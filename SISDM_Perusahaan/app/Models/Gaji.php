@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Gaji extends Model
 {
     use HasFactory;
+    public $timestamps = false;
 
     protected $table = 'tb_gaji';
     protected $primaryKey = 'id_gaji';

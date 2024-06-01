@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('gaji_pokok', 10, 2)->default(0.00);
             $table->decimal('gaji_lembur', 10, 2)->default(0.00)->nullable();
             $table->decimal('gaji_total', 10, 2)->default(0.00);
-            $table->timestamps();
+            $table->timestamps(false);
 
             $table->foreign('id_pegawai')->references('id')->on('tb_pegawai')->onDelete('cascade');
             $table->foreign('id_tunjangan')->references('id')->on('tb_tunjangan')->onDelete('cascade');

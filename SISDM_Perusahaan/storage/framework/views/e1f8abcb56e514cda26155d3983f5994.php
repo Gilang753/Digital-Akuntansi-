@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php $__currentLoopData = $tunjangans; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tunjangan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php $__currentLoopData = $tb_tunjangan; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tunjangan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <tr>
                 <td><?php echo e($tunjangan->id_tunjangan); ?></td>
                 <td><?php echo e($tunjangan->nama_tunjangan); ?></td>

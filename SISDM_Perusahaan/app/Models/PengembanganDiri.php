@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class PengembanganDiri extends Model
 {
     use HasFactory;
+    public $timestamps = false;
 
     protected $table = 'tb_pengembangandiri';
     protected $primaryKey = 'id_pengembangan';

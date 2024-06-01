@@ -25,7 +25,7 @@
         <div class="form-group">
             <label for="jenis_kelamin">Jenis Kelamin:</label>
             <select class="form-control" id="jenis_kelamin" name="jenis_kelamin" required>
-                <option value="Laki-laki" {{ $pegawai->jenis_kelamin == 'Laki-laki' ? 'selected' : '' }}>Laki-laki</option>
+                <option value="Laki" {{ $pegawai->jenis_kelamin == 'Laki' ? 'selected' : '' }}>Laki</option>
                 <option value="Perempuan" {{ $pegawai->jenis_kelamin == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
             </select>
         </div>

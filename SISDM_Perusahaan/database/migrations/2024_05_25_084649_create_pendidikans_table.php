@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('institusiPendidikan');
             $table->string('jurusan');
             $table->date('tanggal_kelulusan');
-            $table->timestamps();
+            $table->timestamps(false);
 
             $table->foreign('id_pegawai')->references('id')->on('tb_pegawai')->onDelete('cascade');
             $table->foreign('id_pengembangan')->references('id')->on('tb_pengembangandiri')->onDelete('cascade');

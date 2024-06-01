@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('jenis_pelatihan');
             $table->date('tanggal_pelaksana');
             $table->string('sertifikat')->nullable();
-            $table->timestamps();
+            $table->timestamps(false);
 
             $table->foreign('id_pegawai')->references('id')->on('tb_pegawai')->onDelete('cascade');
         });

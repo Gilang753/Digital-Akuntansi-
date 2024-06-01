@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_jenisijin');
             $table->date('tanggalPengajuan');
             $table->enum('statusPengajuan', ['Pending', 'Disetujui', 'Ditolak'])->default('Pending');
-            $table->timestamps();
+            $table->timestamps(false);
 
             $table->foreign('id_pegawai')->references('id')->on('tb_pegawai')->onDelete('cascade');
             $table->foreign('id_jenisijin')->references('id')->on('tb_jenisijin')->onDelete('cascade');

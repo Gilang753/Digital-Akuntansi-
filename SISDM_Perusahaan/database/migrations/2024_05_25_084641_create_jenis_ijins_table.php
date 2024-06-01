@@ -16,7 +16,7 @@ return new class extends Migration
             $table->text('persyaratan')->nullable();
             $table->integer('lamaijin');
             $table->text('ketentuan')->nullable();
-            $table->timestamps();
+            $table->timestamps(false);
         });
     }
 
